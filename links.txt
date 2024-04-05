@@ -13,3 +13,5 @@ curl -L {link}
 
 1. Np Functions: https://tinyurl.com/npFunct
 2. Decision Tree: https://tinyurl.com/decisionNeels
+3. Linear Regression sum: https://tinyurl.com/linearNeels
+4. Linear Reg for 2 array: 
