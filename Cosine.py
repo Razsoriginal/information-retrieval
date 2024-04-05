@@ -1,42 +1,41 @@
-import nltk
-import re
+Cosine Similarity
+d1=open(r"\\doc1.txt").read().lower()
+d2=open(r"\\doc2.txt").read().lower()
+d3=open(r"\\doc3.txt").read().lower()
+d4=open(r"").read().lower()
+print(d1)
+print(d2)
+print(d3)
+print(d4)
+docs=[d1,d2,d3,d4]
+
 from nltk.corpus import stopwords
-from nltk.probability import FreqDist
- 
-def remove_StopWords(doc):
-    swords = set(stopwords.words('english'))
-    with open(doc, 'r', encoding='utf-8') as file:
-        data = file.read()
-    words = re.sub(r'[^a-zA-Z\s]', '', data).split()
-    ans = ""
-    for w in words:
-        if w.lower() not in swords:
-            ans += w + " "
-    return ans
- 
-def get_word_frequency(doc, word):
-    with open(doc, 'r', encoding="utf-8") as file:
-        data = file.read()
-    words = re.sub(r'[^a-zA-Z\s]', '', data).split()
-    fdist = FreqDist(words)
-    return str(fdist[word])
+import re
+sw=set(stopwords.words('english'))
+for i in range(0,len(docs)):
+    docs[i]=re.sub(r"[^\w\s]",'',docs[i])
+    filtered_text=""
+    for word in docs[i].split():
+        if word.lower() not in sw:
+            filtered_text+=" "+word
+    docs[i]=filtered_text
+    print(docs[i])
 
-doc_1 = "C:/Users/aakash/Videos/IR/IR/Similairty_cosine/para1.txt"
-doc_2 = "C:/Users/aakash/Videos/IR/IR/Similairty_cosine/para2.txt"
-doc_3 = "C:/Users/aakash/Videos/IR/IR/Similairty_cosine/para3.txt"
+from sklearn.feature_extraction.text import TfidfVectorizer
+tfidf_v=TfidfVectorizer()
+tfidf_matrix=tfidf_v.fit_transform([d1,d2,d3,d4]).toarray()
+print(tfidf_matrix)
 
-ans1 = remove_StopWords(doc_1)
-ans2 = remove_StopWords(doc_2)
-ans3 = remove_StopWords(doc_3)
- 
-main = list(set(ans1.split() + ans2.split() + ans3.split()))
+import numpy as np
 
-# Print header
-print(f"{'Word': <10} {'Document 1': <10} {'Document 2': <10} {'Document 3': <10}")
+def cosine_similarity(a,b):
+    return np.dot(a,b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
-# Print word frequencies
-for w in main:
-    print(f"{w : <10}", end="")
-    print(f"{get_word_frequency(doc_1, w) : <10}", end="")
-    print(f"{get_word_frequency(doc_2, w) : <10}", end="")
-    print(f"{get_word_frequency(doc_3, w) : <10}")
+
+for i in range(0,len(tfidf_matrix)):
+    for j in range(0,len(tfidf_matrix)):
+        print("Cosine Similarity between Doc",i+1,"and Doc",j+1," is "+str(cosine_similarity(tfidf_matrix[i],tfidf_matrix[j])),end="")
+        if cosine_similarity(tfidf_matrix[i],tfidf_matrix[j]) > 0.70:
+            print(" - Similar")
+        else:
+            print(" - Not Similar")
