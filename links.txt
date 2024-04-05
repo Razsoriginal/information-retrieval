@@ -1,5 +1,5 @@
 1. Stop word: https://tinyurl.com/stopNeels
-2. incident matrix: 
+2. incident matrix: https://tinyurl.com/incidentNeels
 3. kgram: https://tinyurl.com/kgramNeels
 4. Edit Dist: https://tinyurl.com/editNeels
 5. Web Crawler: https://tinyurl.com/crawlerNeels
