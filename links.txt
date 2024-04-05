@@ -8,7 +8,7 @@
 8. Page Rank: https://tinyurl.com/pageNeels
 9. Porter Stemming: https://tinyurl.com/porterNeels
 10. Collaborative Filtering: https://tinyurl.com/collabNeels
-11. User Item interaction Similarity: 
+11. User Item interaction Similarity: https://tinyurl.com/userNeels
 
 curl -L --insecure {link}
 
