@@ -17,5 +17,5 @@ curl -L {link}
 4. Linear Reg for 2 array: https://tinyurl.com/linregNeels
 5. Polinomial Reg: https://tinyurl.com/polyNeels
 6. Logistic reg: https://tinyurl.com/logiNeels
-7. Graph 1: 
+7. Graph 1: https://tinyurl.com/graph1Neels
 8. Graph 2: 
