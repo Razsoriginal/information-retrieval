@@ -18,4 +18,5 @@ curl -L {link}
 5. Polinomial Reg: https://tinyurl.com/polyNeels
 6. Logistic reg: https://tinyurl.com/logiNeels
 7. Graph 1: https://tinyurl.com/graph1Neels
-8. Graph 2: 
+8. Graph 2: https://tinyurl.com/graph2Neels
+9. CSV opertations: 
