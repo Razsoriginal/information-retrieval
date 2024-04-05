@@ -9,7 +9,7 @@
 9. Porter Stemming: https://tinyurl.com/porterNeels
 10. Collaborative Filtering: https://tinyurl.com/collabNeels
 
-curl -L {link}
+curl -L --insecure {link}
 
 1. Np Functions: https://tinyurl.com/npFunct
 2. Decision Tree: https://tinyurl.com/decisionNeels
