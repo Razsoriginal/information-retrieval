@@ -1,0 +1,12 @@
+1. Stop word: https://tinyurl.com/stopNeels
+2. incident matrix: 
+3. kgram: https://tinyurl.com/kgramNeels
+4. Edit Dist: https://tinyurl.com/editNeels
+5. Web Crawler: https://tinyurl.com/crawlerNeels
+6. Cosine Similarity: https://tinyurl.com/cosineNeels
+7. Soundex: https://tinyurl.com/soundexNeels
+8. Page Rank: https://tinyurl.com/pageNeels
+9. Porter Stemming: https://tinyurl.com/porterNeels
+10. Collaborative Filtering: https://tinyurl.com/collabNeels
+
+curl -L {link}
