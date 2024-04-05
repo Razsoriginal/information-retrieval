@@ -11,3 +11,4 @@
 
 curl -L {link}
 
+1. Np Functions: https://tinyurl.com/npFunct
