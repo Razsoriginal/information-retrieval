@@ -16,4 +16,6 @@ curl -L {link}
 3. Linear Regression sum: https://tinyurl.com/linearNeels
 4. Linear Reg for 2 array: https://tinyurl.com/linregNeels
 5. Polinomial Reg: https://tinyurl.com/polyNeels
-6. Logistic reg: 
+6. Logistic reg: https://tinyurl.com/logiNeels
+7. Graph 1: 
+8. Graph 2: 
