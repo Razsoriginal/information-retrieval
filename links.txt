@@ -15,4 +15,5 @@ curl -L {link}
 2. Decision Tree: https://tinyurl.com/decisionNeels
 3. Linear Regression sum: https://tinyurl.com/linearNeels
 4. Linear Reg for 2 array: https://tinyurl.com/linregNeels
-5. Polinomial Reg: 
+5. Polinomial Reg: https://tinyurl.com/polyNeels
+6. Logistic reg: 
